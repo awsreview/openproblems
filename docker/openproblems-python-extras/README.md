@@ -13,6 +13,7 @@ Python packages:
 * pyensembl
 * magic-impute
 * meld
+* scprep
 * molecular-cross-validation
 * MulticoreTSNE
 * phate
