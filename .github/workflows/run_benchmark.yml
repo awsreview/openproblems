@@ -106,7 +106,7 @@ jobs:
         sudo apt-get install -qy s3fs
         echo $AWS_ACCESS_KEY_ID:$AWS_SECRET_ACCESS_KEY > ~/.passwd-s3fs
         chmod 600 ~/.passwd-s3fs
-        sudo mkdir -p "/mnt/openproblems-nextflow"
+        mkdir -p /mnt/openproblems-nextflow
         sudo chown $USER /mnt/openproblems-nextflow
         s3fs -o umask=0277,uid=$(id -u) openproblems-nextflow /mnt/openproblems-nextflow
         # Create bucket/ work/ and cwd/
